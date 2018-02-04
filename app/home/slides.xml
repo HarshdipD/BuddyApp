@@ -21,7 +21,7 @@ https://docs.nativescript.org/ui/components.
 			</Slides:Slide>
 			<Slides:Slide class="slide-4">
 				<Label text="This is Panel 4"  />
-				<Button col="1" text="Login via Google..." class="next" tap="login" />
+				<Button col="1" text="Continue" class="next" tap="login" />
 			</Slides:Slide>
 		</Slides:SlideContainer>
 	</GridLayout>
