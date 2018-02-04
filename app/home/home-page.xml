@@ -21,7 +21,7 @@
 							<!--If pupper is sad, a sad text, otherwise, 'Hey how's it going!' -->
 							<Label text="{{suggestion}}" row="2" colSpan="4" col="1" color="white" class="animated m-y-4" textAlignment="center" />
 
-							<Image colSpan="6" row="3" class="m-x-5 m-y-10" src="{{ pet }}" />
+							<Image colSpan="6" row="3" class="m-x-5 m-y-10" src="{{ pet }}" width="55%"/>
 
 							<Button text="Get Suggestions" colSpan="6" row="4" tap="getsuggest" />
 							<Button text="Settings" colSpan="6" row="5" tap="settings" />
