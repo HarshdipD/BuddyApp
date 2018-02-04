@@ -1,0 +1,28 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Slides="nativescript-slides" loaded="pageLoaded">
+
+	<GridLayout rows="* auto">
+		<Slides:SlideContainer id="slides" row="0" pageIndicators="true"
+							  start="onStart" cancelled="onCancelled" changed="onChanged" finished="onFinished">
+			<Slides:Slide class="slide-1">
+				<Label text="This is Panel 1"  />
+				<Label text="Swipe or use buttons" class="subtext" />
+			</Slides:Slide>
+			<Slides:Slide class="slide-2">
+				<Label text="This is Panel 2"  />
+			</Slides:Slide>
+			<Slides:Slide class="slide-3">
+				<Label text="This is Panel 3"  />
+			</Slides:Slide>
+			<Slides:Slide class="slide-4">
+				<Label text="This is Panel 4"  />
+				<Button col="1" text="Login via Google..." class="next" tap="login" />
+			</Slides:Slide>
+		</Slides:SlideContainer>
+	</GridLayout>
+</Page>
