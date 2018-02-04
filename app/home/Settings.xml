@@ -1,11 +1,16 @@
 <Page>
-	<StackLayout orientation="vertical" width="210" height="210" backgroundColor="lightgray">
-		<GridLayout columns="*, *, *, *" rows="*, *, *, *, *, *, *, *" backgroundColor="green">
-			<StackLayout class="hr-dark"></StackLayout>
-			<Label text="Change your goal: " row="1" col="1" colSpan="3" textAlignment="center" />
-			<Slider value="{{ goal }}" maxValue="180" minValue="10" />
-			<Label text="{{ goal }}" row="2" col="1" colSpan="3" textAlignment="center" />
-			<StackLayout class="hr-dark"></StackLayout>
-		</GridLayout>
-	</StackLayout>
+	<ActionBar title="Settings" textAlignment="center" class="action-bar">
+
+	</ActionBar>
+
+	<GridLayout columns="*, *, *, *" rows="*, *, *, *, *, *, *, *">
+
+		<Label text="Change your goal: " row="0" col="0" colSpan="3" marginLeft="10" marginTop="20" fontSize="18" />
+		<Slider value="{{ goal }}" maxValue="180" minValue="10" row="1" colSpan="3" />
+		<Label text="{{goal}}" row="1" col="4" marginTop="25" marginLeft="20" />
+		<StackLayout class="hr-dark" row="2" colSpan="4"></StackLayout>
+		<Button text="Save Changes" tap="{{ onButtonTap }}" row="3" col="0" colSpan="2" />
+		<Button text="Cancel" tap="cancel" row="3" col="2" colSpan="2" />
+	</GridLayout>
+
 </Page>
