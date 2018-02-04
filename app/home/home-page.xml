@@ -24,8 +24,8 @@
 							<Image colSpan="6" row="3" class="m-x-5 m-y-10" src="{{ pet }}" width="55%"/>
 
 							<Button text="Get Suggestions" colSpan="6" row="4" tap="getsuggest" />
-							<Button text="Settings" colSpan="6" row="5" tap="settings" />
-							<Button text="Share your doggo!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
+							
+							<Button text="Share your doggo!" col="2" colSpan="2" row="5" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
 							 row="7" tap="Share" />
 
 						</GridLayout>
@@ -46,7 +46,7 @@
 
 						<Label text="Your 7 days progress: " colSpan="3" class="m-t-10 m-l-10 font-weight-bold h3" row="5" color="white" /> /*CHART WILL COME HERE*/
 
-
+						<Button text="Settings" colSpan="6" row="6" tap="settings" />
 						<!-- <Label text="Share your progress! " colSpan="3" class="m-t-10 m-l-10 font-weight-bold h3" row="6" color="white" />-->
 						<Button text="Share your progress!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
 						 row="7" tap="Share" />
