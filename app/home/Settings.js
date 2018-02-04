@@ -3,6 +3,9 @@ var observableModule = require("data/observable");
 var device = require("platform").device;
 var pageData = new observableModule.Observable();
 var goal = 0;
+var frameModule = require("ui/frame");
+var topmost = frameModule.topmost;
+
 // These are from a shitty website
 
 // Get goal
@@ -31,4 +34,8 @@ exports.pageLoaded = pageLoaded;
 // Slider
 exports.onSliderValueChange = function () {
     // https.post("https://exuberant-authority.glitch.me/database?user=" + device.uuid + "&goal=" + pageData.get("goal"));
+}
+
+exports.cancel = function () {
+    topmost().navigate("home/home-page");
 }
