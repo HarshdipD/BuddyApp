@@ -11,21 +11,21 @@
 				<TabViewItem.view>
 					/*CONTENTS OF HOME PAGE*/
 					<ScrollView>
-						<GridLayout backgroundColor="#0099CC" columns="*, *, *, *, *, *" rows="auto, auto, auto, auto, auto, auto, auto, auto">
-							<Label text="Phone limit: " row="0" marginLeft="10" marginTop="18" colSpan="4" />
+						<GridLayout columns="*, *, *, *, *, *" rows="auto, auto, auto, auto, auto, auto, auto, auto">
+							<Label text="Phone Usage Limit: " row="0" marginLeft="10" marginTop="18" colSpan="4" />
 							<Label text="" col="0" row="1" marginTop="10" marginLeft="25" />
 							<Progress value="{{ time }}" marginBottom="10" marginTop="10" marginLeft="10" marginRight="10" col="1" row="1" colSpan="4"
 							 color="red" backgroundColor="orange" maxValue="{{ goal }}" />
-							<Label text="Limit" col="5" row="1" marginTop="8" />
+							<Label text="{{goal}}" col="5" row="1" marginLeft="20" marginTop="8" />
 
 							<!--If pupper is sad, a sad text, otherwise, 'Hey how's it going!' -->
-							<Label text="{{suggestion}}" row="2" colSpan="4" col="1" color="white" class="animated m-y-4" textAlignment="center" />
+							<Label text="{{suggestion}}" row="2" colSpan="4" col="1" color="black" class="animated m-y-4" textAlignment="center" />
 
-							<Image colSpan="6" row="3" class="m-x-5 m-y-10" src="{{ pet }}" width="55%"/>
+							<Image colSpan="6" row="3" class="m-x-5 m-y-10" src="{{ pet }}" />
 
 							<Button text="Get Suggestions" colSpan="6" row="4" tap="getsuggest" />
 							
-							<Button text="Share your doggo!" col="2" colSpan="2" row="5" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
+							<Button text="Share your doggo!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
 							 row="7" tap="Share" />
 
 						</GridLayout>
@@ -46,7 +46,7 @@
 
 						<Label text="Your 7 days progress: " colSpan="3" class="m-t-10 m-l-10 font-weight-bold h3" row="5" color="white" /> /*CHART WILL COME HERE*/
 
-						<Button text="Settings" colSpan="6" row="6" tap="settings" />
+						<Button text="Settings" colSpan="6" row="5" tap="settings" />
 						<!-- <Label text="Share your progress! " colSpan="3" class="m-t-10 m-l-10 font-weight-bold h3" row="6" color="white" />-->
 						<Button text="Share your progress!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
 						 row="7" tap="Share" />
