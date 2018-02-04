@@ -34,6 +34,12 @@ function pageLoaded(args) {
   pageData.set("time", time);
   pageData.set("goal", goal);
   pageData.set("suggestion", "How's it going?");
+  // Get image
+  if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.25) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/happydog.gif?token=AP4pMSPFzpVvyUaBu-NuHzvIFKPKDZfeks5agEbuwA%3D%3D");
+  else if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.5) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/semi-happy-dog.gif?token=AP4pMdS7J-CncZKyzwyEbI9Xbs1LBhnRks5af7-pwA%3D%3D");
+  else if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.75) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/neutral-dog.gif?token=AP4pMcCmAogRkOqZ-Zq_dmKL_7X2fMoCks5af7_CwA%3D%3D");
+  else if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal"))) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/semi-sad%3Ddog.gif?token=AP4pMfIrdxzHhiYiw4ahQu3jYhfIoNuXks5af79owA%3D%3D");
+  else pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/sad-dog.gif?token=AP4pMRTwKXmEYj1Jbhhz1OtgX44hQjhWks5af7_pwA%3D%3D");
 }
 exports.pageLoaded = pageLoaded;
 
@@ -41,16 +47,6 @@ exports.pageLoaded = pageLoaded;
 exports.signin = function () {
   // https.post("https://exuberant-authority.glitch.me/database?user=" + device.uuid + "&goal=" + pageData.get('txtKeyword'));
 };
-
-// Gets image
-exports.pet = function () {
-  // Happy-SemiHappy-Neutral-SemiSad-Sad
-  if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.25) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/happydog.gif?token=AP4pMSPFzpVvyUaBu-NuHzvIFKPKDZfeks5agEbuwA%3D%3D");
-  else if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.5) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/semi-happy-dog.gif?token=AP4pMdS7J-CncZKyzwyEbI9Xbs1LBhnRks5af7-pwA%3D%3D");
-  else if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.75) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/neutral-dog.gif?token=AP4pMcCmAogRkOqZ-Zq_dmKL_7X2fMoCks5af7_CwA%3D%3D");
-  else if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal"))) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/semi-sad%3Ddog.gif?token=AP4pMfIrdxzHhiYiw4ahQu3jYhfIoNuXks5af79owA%3D%3D");
-  else pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/sad-dog.gif?token=AP4pMRTwKXmEYj1Jbhhz1OtgX44hQjhWks5af7_pwA%3D%3D");
-}
 
 // Get suggestion
 exports.getsuggest = function () {
