@@ -10,17 +10,13 @@ https://docs.nativescript.org/ui/components.
 		<Slides:SlideContainer id="slides" row="0" pageIndicators="true"
 							  start="onStart" cancelled="onCancelled" changed="onChanged" finished="onFinished">
 			<Slides:Slide class="slide-1">
-				<Label text="This is Panel 1"  />
-				<Label text="Swipe or use buttons" class="subtext" />
+				<Image src="https://raw.githubusercontent.com/HarshdipD/BuddyApp/master/Graphics/Slides/Meet%20Buddy.png" />
 			</Slides:Slide>
 			<Slides:Slide class="slide-2">
-				<Label text="This is Panel 2"  />
+				<Image src="https://raw.githubusercontent.com/HarshdipD/BuddyApp/master/Graphics/Slides/Track.png" />
 			</Slides:Slide>
 			<Slides:Slide class="slide-3">
-				<Label text="This is Panel 3"  />
-			</Slides:Slide>
-			<Slides:Slide class="slide-4">
-				<Label text="This is Panel 4"  />
+				<Image src="https://raw.githubusercontent.com/HarshdipD/BuddyApp/master/Graphics/Slides/unhappy.png" />
 				<Button col="1" text="Continue" class="next" tap="login" />
 			</Slides:Slide>
 		</Slides:SlideContainer>

@@ -17,6 +17,7 @@ app.android.registerBroadcastReceiver(android.content.Intent.ACTION_SCREEN_ON,
     app.android.registerBroadcastReceiver(android.content.Intent.ACTION_SCREEN_OFF,
       function onReceiveCallback(context, intent) {
         time += new Date().getTime() - temptime; // ms
+        console.log(time);
       });
   });
 
@@ -33,6 +34,7 @@ function pageLoaded(args) {
   page.bindingContext = pageData;
   pageData.set("time", time);
   pageData.set("goal", goal);
+  console.log(time+"/"+goal);
   pageData.set("suggestion", "How's it going?");
   // Get image
   if (parseInt(pageData.get("time")) <= parseInt(pageData.get("goal")) * 0.25) pageData.set("pet", "https://raw.githubusercontent.com/HarshdipD/Doggie/master/Graphics/happydog.gif?token=AP4pMSPFzpVvyUaBu-NuHzvIFKPKDZfeks5agEbuwA%3D%3D");

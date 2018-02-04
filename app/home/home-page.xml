@@ -1,6 +1,6 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-	<ActionBar title="Doggie" textAlignment="center" class="action-bar">
+	<ActionBar title="Buddy" textAlignment="center" class="action-bar">
 
 	</ActionBar>
 
@@ -21,12 +21,12 @@
 							<!--If pupper is sad, a sad text, otherwise, 'Hey how's it going!' -->
 							<Label text="{{suggestion}}" row="2" colSpan="4" col="1" color="black" class="animated m-y-4" textAlignment="center" />
 
-							<Image colSpan="6" row="3" class="m-x-5 m-y-10" src="{{ pet }}" />
+							<Image colSpan="6" row="3" class="m-x-5 m-y-10" width="60%" src="{{ pet }}" />
 
 							<Button text="Get Suggestions" colSpan="6" row="4" tap="getsuggest" />
-							
-							<Button text="Share your doggo!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
-							 row="7" tap="Share" />
+
+							<!-- <Button text="Share your doggo!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
+							 row="7" tap="Share" /> -->
 
 						</GridLayout>
 					</ScrollView>
@@ -48,8 +48,8 @@
 
 						<Button text="Settings" colSpan="6" row="5" tap="settings" />
 						<!-- <Label text="Share your progress! " colSpan="3" class="m-t-10 m-l-10 font-weight-bold h3" row="6" color="white" />-->
-						<Button text="Share your progress!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
-						 row="7" tap="Share" />
+						<!-- <Button text="Share your progress!" col="2" colSpan="2" row="8" class="m-t-10 m-l-10 font-weight-bold" color="white" backgroundColor="black"
+						 row="7" tap="Share" /> -->
 
 
 
