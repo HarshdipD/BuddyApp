@@ -1,0 +1,11 @@
+<Page>
+	<StackLayout orientation="vertical" width="210" height="210" backgroundColor="lightgray">
+		<GridLayout columns="*, *, *, *" rows="*, *, *, *, *, *, *, *" backgroundColor="green">
+			<StackLayout class="hr-dark"></StackLayout>
+			<Label text="Change your goal: " row="1" col="1" colSpan="3" textAlignment="center" />
+			<Slider value="{{ goal }}" maxValue="180" minValue="10" />
+			<Label text="{{ goal }}" row="2" col="1" colSpan="3" textAlignment="center" />
+			<StackLayout class="hr-dark"></StackLayout>
+		</GridLayout>
+	</StackLayout>
+</Page>
